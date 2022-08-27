@@ -10,7 +10,11 @@ module.exports = {
       darkGray: '#414141',
       veryDarkGray: '#393939',
       paleWhite: '#f5f5f5',
-      neutral: '#cacbcc'
+      neutral: '#cacbcc',
+      white2: '#F7F7F7',
+      white3: '#E7E6E2',
+      white4: '#DADADA',
+      white5: '#CCCCCC'
 
     },
     fontFamily:{
@@ -20,9 +24,12 @@ module.exports = {
       'sm': '64px',
       'md': '768px',
       'lg': '1100px',
-      'contact': '819px'
+      'contact': '819px',
+      'navbar' : '1122px',
+      'nav': '1250px'
     }
   },
+  darkMode: 'class',
   plugins: [
   
   ],

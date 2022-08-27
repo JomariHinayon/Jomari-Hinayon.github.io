@@ -11,42 +11,72 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Jomari Hinayon || Portfolio</title>
 </head>
-<body class="font-montserrat">
+<body class="font-montserrat dark:bg-veryDarkGray">
     <!-- Navbar -->
-    <nav class="relative mx-auto bg-secondary p-6 bg-paleWhite">
+    <nav class="relative  bg-secondary p-6 bg-paleWhite dark:bg-darkGray ">
         <!-- Flex Container -->
-        <div class="container flex items-center justify-between">
+        <div class="lg:container flex items-center lg:space-x-16 relative justify-evenly lg:mx-auto">
             <!-- Logo -->
-            <div class="flex items-center space-x-5 lg:pl-28 md:pl-0">
-                <img class='w-24' src="./images/logo.png" alt="logo"/>
-                <span class="text-5xl font-bold">Portfolio.</span>
+            <div class="flex items-center space-x-5">
+                <img class='w-24 dark:hidden' src="./images/logo.png" alt="logo"/>
+                <img class='w-24 dark:inline-flex hidden' src="./images/logo-white.png" alt="logo"/>
+                <span class="text-5xl font-bold dark:text-white">Portfolio.</span>
             </div>
+            
             <!-- Menu items -->
-            <div class="hidden lg:flex space-x-6">
-                <a href="#" class="font-semibold text-[14px] text-lightGray">HOME</a>
-                <a href="#" class="font-semibold text-[14px] text-lightGray">ABOUT</a>
-                <a href="#" class="font-semibold text-[14px] text-lightGray">SERVICES</a>
-                <a href="#" class="font-semibold text-[14px] text-lightGray">PROJECTS</a>
-                <a href="#" class="font-semibold text-[14px] text-lightGray">SKILLS</a>
-                <a href="#" class="font-semibold text-[14px] text-lightGray">CONTACT</a>
+            <div class="hidden navbar:flex lg:flex-row md:flex-row  space-x-6 ">
+                <a href="#" class="font-semibold text-[14px] text-lightGray hover:text-veryDarkGray dark:text-white2">HOME</a>
+                <a href="#" class="font-semibold text-[14px] text-lightGray hover:text-veryDarkGray dark:text-white2">ABOUT</a>
+                <a href="#" class="font-semibold text-[14px] text-lightGray hover:text-veryDarkGray dark:text-white2">SERVICES</a>
+                <a href="#" class="font-semibold text-[14px] text-lightGray hover:text-veryDarkGray dark:text-white2">PROJECTS</a>
+                <a href="#" class="font-semibold text-[14px] text-lightGray hover:text-veryDarkGray dark:text-white2">SKILLS</a>
+                <a href="#" class="font-semibold text-[14px] text-lightGray hover:text-veryDarkGray dark:text-white2">CONTACT</a>
+            </div>
+            <!-- Sun and Moon Icons -->
+            <div class="flex cursor-pointer">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 sun text-white2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 moon">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" />
+                </svg>
+                  
+            </div>
+            <div class="navbar:hidden">
+                <!-- Hamburger Icon -->
+                <button id="menu-btn" class="block hamburger navbar:hidden focus:outline-none top-2">
+                    <span class="hamburger-top dark:bg-white"></span>
+                    <span class="hamburger-middle dark:bg-white"></span>
+                    <span class="hamburger-bottom dark:bg-white"></span>
+                </button>
+                <!-- Mobile Menu -->
+                <div id="menu" class="hidden absolute flex-col items-center drop-shadow-xl bg-white p-6
+                space-y-5 right-0 w-full dark:bg-veryDarkGray top-20">
+                    <a href="#"  class="font-semibold text-[14px] text-lightGray hover:text-veryDarkGray dark:text-white5">HOME</a>
+                    <a href="#"  class="font-semibold text-[14px] text-lightGray hover:text-veryDarkGray dark:text-white5">ABOUT</a>
+                    <a href="#"  class="font-semibold text-[14px] text-lightGray hover:text-veryDarkGray dark:text-white5">SERVICES</a>
+                    <a href="#"  class="font-semibold text-[14px] text-lightGray hover:text-veryDarkGray dark:text-white5">PROJECTS</a>
+                    <a href="#"  class="font-semibold text-[14px] text-lightGray hover:text-veryDarkGray dark:text-white5">SKILLS</a>
+                    <a href="#"  class="font-semibold text-[14px] text-lightGray hover:text-veryDarkGray dark:text-white5">CONTACT</a>
+                </div>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section id="hero" class="bg-paleWhite">
+    <section id="hero" class="bg-paleWhite dark:bg-darkGray">
         <!-- Flex Container -->
         <div class="lg:container lg:mx-auto flex sm:flex-col lg:flex-row md:flex-row md:mx-5 items-center pt-5 px-3">
             <!-- Left Side -->
             <div class="flex flex-col">
-                <h6 class="text-gray font-semibold mb-1">HELLO, MY NAME IS</h6>
-                <h1 class="text-5xl font-bold">JOMARI HINAYON</h1>
-                <p class="my-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea blanditiis rerum illum soluta quos assumenda 
+                <h6 class="text-gray font-semibold mb-1 dark:text-white2">HELLO, MY NAME IS</h6>
+                <h1 class="text-5xl font-bold dark:text-white">JOMARI HINAYON</h1>
+                <p class="my-5 dark:text-white5 text-gray">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea blanditiis rerum illum soluta quos assumenda 
                     reprehenderit facere voluptate.
                 </p>
                 <a href="#" class="p-3 px-6 text-white 
                 bg-[#393939] rounded w-44 font-semibold hover:bg-black
-                transition duration-150 ease-out hover:ease-in"
+                transition duration-150 ease-out hover:ease-in dark:text-darkGray dark:bg-white"
                 >
                     MY PROJECTS
                 </a>
@@ -64,20 +94,20 @@
         <div class="md:container mx-auto grid grid-cols-1 lg:grid-cols-2">
             <!--Title About-->
             <div class="py-20 col-span-1 lg:col-span-2 text-center">
-                <h1 class="text-4xl font-bold pb-5 text-veryDarkGray">ABOUT ME</h1>
+                <h1 class="text-4xl font-bold pb-5 text-veryDarkGray dark:text-white">ABOUT ME</h1>
                 <hr style="border:1px solid #bcbcbc; width: 50px; margin: 0 auto; margin-bottom: 5px;"/>
                 <hr style="border:1px solid #bcbcbc; width: 100px; margin: 0 auto;"/>
             </div>
             <!-- Self Description -->
             <div class="col-span-1 px-16 md pb-20 ">
-                <h5 class="text-3xl font-bold text-darkGray">Hello!</h5>
-                <p class="py-5 leading-loose font-medium text-gray">I'm Jomari, A passionate web developer creating responsive websites and building applications
+                <h5 class="text-3xl font-bold text-darkGray dark:text-white3">Hello!</h5>
+                <p class="py-5 leading-loose font-medium text-gray dark:text-white5">I'm Jomari, A passionate web developer creating responsive websites and building applications
                     providing innovatory designs. I'm a starter developer with savvy skills in front-end web development guarantee
                     satisfactory projects in the clients.
                 </p>
                 <a href="#" class="p-3 px-6 text-white 
                 bg-[#393939] rounded w-44 font-semibold hover:bg-black
-                transition duration-150 ease-out hover:ease-in " 
+                transition duration-150 ease-out hover:ease-in dark:bg-lightGray dark:text-white2" 
                 >DOWNLOAD MY CV</a>
             </div>
             <!-- Skills -->
@@ -119,45 +149,45 @@
     <!-- Services Section -->
     <section id="services ">
         <!-- Grid Container -->
-        <div class=" bg-paleWhite mx-auto grid grid-cols-1 lg:grid-cols-4 justify-center gap-10 md:px-20 lg:px-28 pb-20">
+        <div class=" bg-paleWhite dark:bg-darkGray mx-auto grid grid-cols-1 lg:grid-cols-4 justify-center gap-10 md:px-20 lg:px-28 pb-20">
             <!-- Title Services -->
             <div class="pt-20 pb-5 col-span-1 lg:col-span-4 text-center">
-                <h1 class="text-4xl font-bold pb-5 text-veryDarkGray">MY SERVICES</h1>
+                <h1 class="text-4xl font-bold pb-5 text-veryDarkGray dark:text-white">MY SERVICES</h1>
                 <hr style="border: 1px solid #bcbcbc; width: 50px; margin: 0 auto; margin-bottom: 5px; ">
                 <hr style="border: 1px solid #bcbcbc; width: 100px; margin: 0 auto; margin-bottom: 5px; ">
             </div>
             <!-- Offer Services -->
-            <div class="md:mx-2 sm:mx-5 pt-14 px-5 flex flex-col items-center bg-white hover:bg-paleWhite hover:drop-shadow-2xl ease-in duration-200 drop-shadow-md">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10 p-2 border-2 rounded-full mb-5  hover:bg-lightGray ease-in duration-200">
+            <div class="md:mx-2 sm:mx-5 pt-14 px-5 flex flex-col hover:shadow-white hover:shadow-xl items-center bg-white dark:bg-gray hover:bg-paleWhite hover:drop-shadow-2xl ease-in duration-200 drop-shadow-md">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10 p-2 border-2 rounded-full mb-5  hover:bg-lightGray ease-in duration-200 dark:text-white">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5" />
                 </svg>
-                <h6 class="mb-5">Reusable Codes</h6>  
+                <h6 class="mb-5 dark:text-white2">Reusable Codes</h6>  
                 <hr style="border: 1px solid #bcbcbc; width: 100px; margin: 0 auto; margin-bottom: 5px; ">
-                <p class="text-center my-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia atque, tempore voluptates autem.</p>
+                <p class="text-center my-6 dark:text-white3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia atque, tempore voluptates autem.</p>
             </div>
-            <div class=" md:mx-2 sm:mx-5 pt-14 px-5 flex flex-col items-center bg-white hover:bg-paleWhite hover:drop-shadow-2xl ease-in duration-200 drop-shadow-md">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10 p-2 border-2 rounded-full mb-5  hover:bg-lightGray ease-in duration-200">
+            <div class="hover:shadow-white hover:shadow-xl dark:bg-gray md:mx-2 sm:mx-5 pt-14 px-5 flex flex-col items-center bg-white hover:bg-paleWhite hover:drop-shadow-2xl ease-in duration-200 drop-shadow-md">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10 p-2 border-2 rounded-full mb-5  hover:bg-lightGray ease-in duration-200 dark:text-white">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 006 3.75v16.5a2.25 2.25 0 002.25 2.25h7.5A2.25 2.25 0 0018 20.25V3.75a2.25 2.25 0 00-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" />
                 </svg>                  
-                <h6 class="mb-5">Reusable Codes</h6>  
+                <h6 class="mb-5 dark:text-white2">Reusable Codes</h6>  
                 <hr style="border: 1px solid #bcbcbc; width: 100px; margin: 0 auto; margin-bottom: 5px; ">
-                <p class="text-center my-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia atque, tempore voluptates autem.</p>
+                <p class="text-center my-6 dark:text-white3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia atque, tempore voluptates autem.</p>
             </div>
-            <div class=" md:mx-2 sm:mx-5 pt-14 px-5 flex flex-col items-center bg-white hover:bg-paleWhite hover:drop-shadow-2xl ease-in duration-200 drop-shadow-md">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10 p-2 border-2 rounded-full mb-5  hover:bg-lightGray ease-in duration-200">
+            <div class=" hover:shadow-white hover:shadow-xl dark:bg-gray md:mx-2 sm:mx-5 pt-14 px-5 flex flex-col items-center bg-white hover:bg-paleWhite hover:drop-shadow-2xl ease-in duration-200 drop-shadow-md">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10 p-2 border-2 rounded-full mb-5  hover:bg-lightGray ease-in duration-200 dark:text-white">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 3v1.5M4.5 8.25H3m18 0h-1.5M4.5 12H3m18 0h-1.5m-15 3.75H3m18 0h-1.5M8.25 19.5V21M12 3v1.5m0 15V21m3.75-18v1.5m0 15V21m-9-1.5h10.5a2.25 2.25 0 002.25-2.25V6.75a2.25 2.25 0 00-2.25-2.25H6.75A2.25 2.25 0 004.5 6.75v10.5a2.25 2.25 0 002.25 2.25zm.75-12h9v9h-9v-9z" />
                 </svg>                  
-                <h6 class="mb-5">Reusable Codes</h6>  
+                <h6 class="mb-5 dark:text-white2">Reusable Codes</h6>  
                 <hr style="border: 1px solid #bcbcbc; width: 100px; margin: 0 auto; margin-bottom: 5px; ">
-                <p class="text-center my-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia atque, tempore voluptates autem.</p>
+                <p class="text-center my-6 dark:text-white3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia atque, tempore voluptates autem.</p>
             </div>
-            <div class=" md:mx-2 sm:mx-5 pt-14 px-5 flex flex-col items-center bg-white hover:bg-paleWhite hover:drop-shadow-2xl ease-in duration-200 drop-shadow-md">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10 p-2 border-2 rounded-full mb-5 hover:bg-lightGray ease-in duration-200">
+            <div class="hover:shadow-white hover:shadow-xl dark:bg-gray md:mx-2 sm:mx-5 pt-14 px-5 flex flex-col items-center bg-white hover:bg-paleWhite hover:drop-sh adow-2xl ease-in duration-200 drop-shadow-md">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10 p-2 border-2 rounded-full mb-5 hover:bg-lightGray ease-in duration-200 dark:text-white">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18L9 11.25l4.306 4.307a11.95 11.95 0 015.814-5.519l2.74-1.22m0 0l-5.94-2.28m5.94 2.28l-2.28 5.941" />
                 </svg>                  
-                <h6 class="mb-5">Reusable Codes</h6>  
+                <h6 class="mb-5 dark:text-white2">Reusable Codes</h6>  
                 <hr style="border: 1px solid #bcbcbc; width: 100px; margin: 0 auto; margin-bottom: 5px; ">
-                <p class="text-center my-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia atque, tempore voluptates autem.</p>
+                <p class="text-center my-6 dark:text-white3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia atque, tempore voluptates autem.</p>
             </div>
         </div>
     </section>
@@ -168,7 +198,7 @@
         <div class="md:container md:mx-auto sm:px-10 grid lg:grid-cols-2 gap-5 pb-10">
             <!--Title About-->
             <div class="py-20 col-span-1 lg:col-span-2 text-center ">
-                <h1 class="text-4xl font-bold pb-5 text-veryDarkGray">MY PROJECTS</h1>
+                <h1 class="text-4xl font-bold pb-5 text-veryDarkGray dark:text-white">MY PROJECTS</h1>
                 <hr style="border:1px solid #bcbcbc; width: 50px; margin: 0 auto; margin-bottom: 5px;"/>
                 <hr style="border:1px solid #bcbcbc; width: 100px; margin: 0 auto;"/>
             </div>
@@ -190,53 +220,53 @@
 
     <!-- Contacts Section -->
     <section id="Contacts">
-        <div class=" bg-paleWhite flex sm:flex-col md:flex-col lg:flex-row pt-10 px-20 gap-10 pb-10">
+        <div class=" bg-paleWhite flex sm:flex-col md:flex-col lg:flex-row pt-10 px-20 gap-10 pb-10 dark:bg-darkGray">
             <!-- Left Side -->
-            <div class="flex flex-col lg:w-[60%] drop-shadow-2xl md:mx-auto bg-white p-10">
-                <h2 class="text-3xl font-semibold text-veryDarkGray pb-3">GET IN TOUCH</h2>
-                <hr style="border:1px solid #979494; width: 50px; margin-bottom: 5px;"/>
+            <div class="flex flex-col lg:w-[60%] drop-shadow-2xl md:mx-auto bg-white p-10 dark:bg-lightGray dark:shadow-inner dark:drop-shadow-2xl">
+                <h2 class="text-3xl font-semibold text-veryDarkGray pb-3 dark:text-white">GET IN TOUCH</h2>
+                <hr style="border:1px solid #979494; width: 50px; margin-bottom: 5px; " />
                 <hr style="border:1px solid #979494; width: 100px; margin-bottom: 5px;"/>
-                <p class="text-sm font-medium text-gray pt-5 pb-10 leading-6">I'm Jomari, A passionate web developer creating responsive websites and building applications
+                <p class="text-sm font-medium text-gray pt-5 pb-10 leading-6 dark:text-white2">I'm Jomari, A passionate web developer creating responsive websites and building applications
                     providing innovatory designs
                 </p>
                 <div class="flex sm:flex-col md:flex-row gap-10 mb-5">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-11 h-11 border-2 mt-2 border-lightGray rounded-full p-2 stroke-5">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="dark:text-white2 dark:border-white w-11 h-11 border-2 mt-2 border-lightGray rounded-full p-2 stroke-5">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
                     </svg>
                     <div class="flex flex-col gap-1">
-                        <h6 class="font-medium text-gray text-xl">Phone</h6>
-                        <p class="text-gray">+639266266413</p>
+                        <h6 class="font-medium text-gray text-xl dark:text-white3">Phone</h6>
+                        <p class="text-gray dark:text-white3">+639266266413</p>
                     </div>  
                 </div>
                 <div class="flex sm:flex-col md:flex-row gap-10 mb-5">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-11 h-11 border-2 mt-2 border-lightGray rounded-full p-2 stroke-5">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class=" dark:text-white2 dark:border-white w-11 h-11 border-2 mt-2 border-lightGray rounded-full p-2 stroke-5">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
                     </svg>                      
                     <div class="flex flex-col gap-1">
-                        <h6 class="font-medium text-gray text-xl">Email</h6>
-                        <p class="text-gray truncate">hinayonjomari@gmail.com</p>
+                        <h6 class="font-medium text-gray text-xl dark:text-white3">Email</h6>
+                        <p class="text-gray truncate dark:text-white3">hinayonjomari@gmail.com</p>
                     </div>  
                 </div>
                 <div class="flex sm:flex-col md:flex-row gap-10 mb-5">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-11 h-11 border-2 mt-2 border-lightGray rounded-full p-2 stroke-5">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="dark:text-white2 dark:border-white w-11 h-11 border-2 mt-2 border-lightGray rounded-full p-2 stroke-5">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
                     </svg>                      
                     <div class="flex flex-col gap-1">
-                        <h6 class="font-medium text-gray text-xl">My Location</h6>
-                        <p class="text-gray text-sm">Kasiglahan Village, San Jose, Rodriguez, Rizal</p>
+                        <h6 class="font-medium text-gray text-xl dark:text-white3">My Location</h6>
+                        <p class="text-gray text-sm dark:text-white3">Kasiglahan Village, San Jose, Rodriguez, Rizal</p>
                     </div>  
                 </div>
             </div>
             <!-- Right Side -->
             <div class="flex flex-col md:p-16 sm:w-full md:w-full gap-10 ">
                 <div class="sm:space-x-0 lg:space-x-16 md:space-x-16 mx-auto">
-                    <input class="bg-paleWhite border-b-2 border-neutral outline-0 focus:border-gray" type="name" placeholder="Your name">
-                    <input class="border-b sm:mt-5 bg-paleWhite border-neutral outline-0 focus:border-gray" type="name" placeholder="Email">
+                    <input class="bg-paleWhite border-b-2 border-neutral outline-0 focus:border-gray dark:bg-darkGray dark:text-white" type="name" placeholder="Your name">
+                    <input class="border-b sm:mt-5 bg-paleWhite border-neutral outline-0 focus:border-gray dark:bg-darkGray dark:text-white" type="name" placeholder="Email">
                 </div>
-                <textarea placeholder="Your Message" rows="8" cols="50" class="w-full border-2 mx-auto border-neutral p-5 focus:border-gray"></textarea>
+                <textarea placeholder="Your Message" rows="8" cols="50" class="w-full border-2 mx-auto border-neutral p-5 focus:border-gray dark:bg-darkGray dark:text-white"></textarea>
                 <a href="#" class="p-3 md:ml-16 px-6 text-white 
                 bg-[#393939] rounded w-44 font-semibold hover:bg-black
-                transition duration-150 ease-out hover:ease-in"
+                transition duration-150 ease-out hover:ease-in dark:bg-white2 dark:text-veryDarkGray"
                 >Send Message</a>
             </div>
         </div>
@@ -245,14 +275,16 @@
     <!-- Social Links -->
     <section id="social-links">
         <div class="lg:container sm:flex-col flex lg:mx-auto lg:flex-row md:flex-row py-5 md:justify-around md:text-left sm:text-center contact:text-center">
-            <p class="text-[.9rem] font-medium text-lightGray sm:my-auto sm:mb-5 md:pl-5">Copyright © 2022 All rights reserved | This portfolio is made by Jomari Hinayon</p>
+            <p class="text-[.9rem] font-medium text-lightGray sm:my-auto sm:mb-5 md:pl-5 dark:text-white">Copyright © 2022 All rights reserved | This portfolio is made by Jomari Hinayon</p>
             <div class="flex flex-row gap-5 sm:mx-auto sm:pb-2 ">
                 <a href="#" class="fa fa-facebook bg-[#3B5998] rounded-full p-3 text-white text-center w-10"></a>
                 <a href="#" class="fa fa-youtube-play bg-[#ff0000] rounded-full p-3 text-white text-center w-10"></a>
                 <a href="#" class="fa fa-instagram rounded-full p-3 bg-[#E1306C] text-white text-center w-10"></a>
-                <a href="#" class="fa fa-github text-white bg-darkGray rounded-full p-3  text-center w-10"></a>
+                <a href="#" class="fa fa-github text-white bg-darkGray rounded-full p-3  text-center w-10 dark:bg-white dark:text-black"></a>
             </div>
         </div>
     </section>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
