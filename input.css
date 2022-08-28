@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+html{
+    scroll-behavior: smooth;
+}
 
 /* Hamburger Menu */
 .hamburger {
@@ -51,7 +54,45 @@
 }
 
 
-/* Dark Mode */
-.display-hidden{
-    display: none;
+/* Navlinks hover animation */
+
+nav a {
+    position: relative;
 }
+
+nav a:after, nav a .active:after{
+    content: "";
+    position: absolute;
+    background-color:#a7a7a7;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s ease-in-out;
+}
+
+nav a:hover::after,.active::after{
+    width: 100%;
+}
+
+.fixed {
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+    position: fixed;
+    background-color: #f5f5f5;
+    top: 0px;
+    left: 0;
+    right: 0;
+    margin: 0;
+    z-index: 1;
+}
+
+/* Social Links Tooltip */
+.social-link .tooltip{
+    visibility: hidden;
+
+}
+
+.social-link:hover .tooltip{
+    visibility: visible;
+}
+
