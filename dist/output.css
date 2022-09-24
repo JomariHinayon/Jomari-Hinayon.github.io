@@ -637,6 +637,18 @@ video {
   bottom: 100%;
 }
 
+.top-0 {
+  top: 0px;
+}
+
+.top-10 {
+  top: 2.5rem;
+}
+
+.top-12 {
+  top: 3rem;
+}
+
 .z-20 {
   z-index: 20;
 }
@@ -647,6 +659,18 @@ video {
 
 .col-span-1 {
   grid-column: span 1 / span 1;
+}
+
+.col-span-4 {
+  grid-column: span 4 / span 4;
+}
+
+.col-span-3 {
+  grid-column: span 3 / span 3;
+}
+
+.col-span-full {
+  grid-column: 1 / -1;
 }
 
 .my-5 {
@@ -754,6 +778,18 @@ video {
 
 .w-28 {
   width: 7rem;
+}
+
+.w-20 {
+  width: 5rem;
+}
+
+.w-36 {
+  width: 9rem;
+}
+
+.w-48 {
+  width: 12rem;
 }
 
 @-webkit-keyframes bounce {
@@ -880,10 +916,6 @@ video {
 
 .justify-around {
   justify-content: space-around;
-}
-
-.justify-evenly {
-  justify-content: space-evenly;
 }
 
 .gap-5 {
@@ -1034,9 +1066,9 @@ video {
   padding-bottom: 5rem;
 }
 
-.px-16 {
-  padding-left: 4rem;
-  padding-right: 4rem;
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .py-5 {
@@ -1059,19 +1091,9 @@ video {
   padding-right: 5rem;
 }
 
-.px-4 {
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
-.px-8 {
-  padding-left: 2rem;
-  padding-right: 2rem;
-}
-
-.py-24 {
-  padding-top: 6rem;
-  padding-bottom: 6rem;
+.px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
 }
 
 .pt-5 {
@@ -1456,6 +1478,21 @@ nav a:hover::after,.active::after{
   background-color: rgb(247 247 247 / var(--tw-bg-opacity));
 }
 
+.dark .dark\:bg-orange {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 165 0 / var(--tw-bg-opacity));
+}
+
+.dark .dark\:bg-darkOrange {
+  --tw-bg-opacity: 1;
+  background-color: rgb(243 162 34 / var(--tw-bg-opacity));
+}
+
+.dark .dark\:bg-darkerOrange {
+  --tw-bg-opacity: 1;
+  background-color: rgb(214 131 0 / var(--tw-bg-opacity));
+}
+
 .dark .dark\:text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -1517,7 +1554,16 @@ nav a:hover::after,.active::after{
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
+.dark .dark\:hover\:bg-darkerOrange:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(214 131 0 / var(--tw-bg-opacity));
+}
+
 @media (min-width: 64px) {
+  .sm\:top-12 {
+    top: 3rem;
+  }
+
   .sm\:mx-5 {
     margin-left: 1.25rem;
     margin-right: 1.25rem;
@@ -1559,16 +1605,9 @@ nav a:hover::after,.active::after{
     margin-left: calc(0px * calc(1 - var(--tw-space-x-reverse)));
   }
 
-  .sm\:p-24 {
-    padding: 6rem;
-  }
-
-  .sm\:p-20 {
-    padding: 5rem;
-  }
-
-  .sm\:p-10 {
-    padding: 2.5rem;
+  .sm\:px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 
   .sm\:px-10 {
@@ -1576,32 +1615,22 @@ nav a:hover::after,.active::after{
     padding-right: 2.5rem;
   }
 
-  .sm\:px-5 {
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
-  }
-
-  .sm\:px-6 {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-  }
-
   .sm\:px-8 {
     padding-left: 2rem;
     padding-right: 2rem;
   }
 
-  .sm\:px-4 {
-    padding-left: 1rem;
-    padding-right: 1rem;
+  .sm\:px-5 {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
   }
 
   .sm\:pb-2 {
     padding-bottom: 0.5rem;
   }
 
-  .sm\:pl-24 {
-    padding-left: 6rem;
+  .sm\:pb-10 {
+    padding-bottom: 2.5rem;
   }
 
   .sm\:text-center {
@@ -1668,6 +1697,18 @@ nav a:hover::after,.active::after{
     }
   }
 
+  .md\:top-20 {
+    top: 5rem;
+  }
+
+  .md\:top-24 {
+    top: 6rem;
+  }
+
+  .md\:top-28 {
+    top: 7rem;
+  }
+
   .md\:mx-5 {
     margin-left: 1.25rem;
     margin-right: 1.25rem;
@@ -1721,35 +1762,30 @@ nav a:hover::after,.active::after{
     padding: 4rem;
   }
 
-  .md\:px-20 {
-    padding-left: 5rem;
-    padding-right: 5rem;
-  }
-
-  .md\:px-16 {
-    padding-left: 4rem;
-    padding-right: 4rem;
-  }
-
   .md\:px-10 {
     padding-left: 2.5rem;
     padding-right: 2.5rem;
+  }
+
+  .md\:px-20 {
+    padding-left: 5rem;
+    padding-right: 5rem;
   }
 
   .md\:pl-32 {
     padding-left: 8rem;
   }
 
+  .md\:pt-10 {
+    padding-top: 2.5rem;
+  }
+
   .md\:pl-5 {
     padding-left: 1.25rem;
   }
 
-  .md\:pb-20 {
-    padding-bottom: 5rem;
-  }
-
-  .md\:pt-10 {
-    padding-top: 2.5rem;
+  .md\:pb-10 {
+    padding-bottom: 2.5rem;
   }
 
   .md\:text-left {
@@ -1829,6 +1865,18 @@ nav a:hover::after,.active::after{
     grid-column: span 4 / span 4;
   }
 
+  .lg\:col-span-1 {
+    grid-column: span 1 / span 1;
+  }
+
+  .lg\:col-span-3 {
+    grid-column: span 3 / span 3;
+  }
+
+  .lg\:col-span-full {
+    grid-column: 1 / -1;
+  }
+
   .lg\:mx-auto {
     margin-left: auto;
     margin-right: auto;
@@ -1865,12 +1913,9 @@ nav a:hover::after,.active::after{
     padding-right: 7rem;
   }
 
-  .lg\:pl-32 {
-    padding-left: 8rem;
-  }
-
-  .lg\:pl-24 {
-    padding-left: 6rem;
+  .lg\:px-20 {
+    padding-left: 5rem;
+    padding-right: 5rem;
   }
 
   .lg\:pl-20 {
@@ -1897,6 +1942,46 @@ nav a:hover::after,.active::after{
 @media (min-width: 500px) {
   .smLogo\:w-24 {
     width: 6rem;
+  }
+
+  .smLogo\:w-36 {
+    width: 9rem;
+  }
+
+  .smLogo\:w-48 {
+    width: 12rem;
+  }
+
+  .smLogo\:w-28 {
+    width: 7rem;
+  }
+
+  .smLogo\:w-20 {
+    width: 5rem;
+  }
+
+  .smLogo\:w-64 {
+    width: 16rem;
+  }
+
+  .smLogo\:w-2 {
+    width: 0.5rem;
+  }
+
+  .smLogo\:w-full {
+    width: 100%;
+  }
+
+  .smLogo\:w-1\/2 {
+    width: 50%;
+  }
+
+  .smLogo\:w-1\/4 {
+    width: 25%;
+  }
+
+  .smLogo\:w-16 {
+    width: 4rem;
   }
 }
 

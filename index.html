@@ -16,14 +16,13 @@
 </head>
 <body class="font-montserrat dark:bg-veryDarkGray ">
     <!-- Navbar -->
-    <nav class="relative bg-secondary bg-paleWhite dark:bg-darkGray ">
+    <nav class="relative bg-secondary bg-paleWhite dark:bg-darkGray">
         <!-- Flex Container -->
         <div id="menu-items" class="lg:container flex items-center lg:space-x-16 justify-around lg:mx-auto dark:bg-darkGray">
             <!-- Logo -->
-            <div class="flex items-center space-x-5">
-                <img class='w-12 smLogo:w-24 dark:hidden logo ' src="./images/logo.png" alt="logo"/>
-                <img class='w-12 smLogo:w-24 dark:inline-flex hidden logo ' src="./images/logo-white.png" alt="logo"/>
-                <span class="text-4xl md:text-5xl font-bold dark:text-white slide-down ">Jom.</span>
+            <div class="flex items-center">
+                <img class='w-12 smLogo:w-16 dark:hidden logo pt-5 ' src="./images/logo-black.png" alt="logo"/>
+                <img class='w-12 smLogo:w-16 dark:inline-flex hidden logo pt-5 ' src="./images/logo-white.png" alt="logo"/>
             </div>
             
             <!-- Menu items -->
@@ -53,7 +52,7 @@
                 </button>
                 <!-- Mobile Menu -->
                 <div id="menu" class="hidden absolute flex-col items-center drop-shadow-xl bg-paleWhite  p-6
-                space-y-5 right-0 w-full dark:bg-veryDarkGray top-32 h-auto slide-down z-10 ">
+                space-y-5 right-0 w-full dark:bg-veryDarkGray sm:top-12 md:top-28 h-auto slide-down z-10 ">
                     <a href="#hero"  class="font-semibold text-[14px] text-lightGray hover:text-veryDarkGray dark:text-white5">HOME</a>
                     <a href="#about"  class="font-semibold text-[14px] text-lightGray hover:text-veryDarkGray dark:text-white5">ABOUT</a>
                     <a href="#services"  class="font-semibold text-[14px] text-lightGray hover:text-veryDarkGray dark:text-white5">SERVICES</a>
@@ -76,12 +75,12 @@
                 </p>
                 <a href="#projects" class="slide-right p-3 px-6 text-white 
                 bg-darkOrange rounded w-44 font-semibold hover:bg-darkerOrange
-                transition duration-150 ease-out hover:ease-in dark:text-darkGray dark:bg-white">
+                transition duration-150 ease-out hover:ease-in dark:text-darkGray dark:bg-orange dark:hover:bg-darkerOrange">
                     MY PROJECTS
                 </a>
             </div>
             <!-- Right Side -->
-            <div>
+            <div class="pt-10 sm:px-5 lg:px-20">
                 <img class="w-96 md:w-[680px] my-pic" src="./images/my-pic.png" alt="My Image"/>
             </div>
         </div>
@@ -90,7 +89,7 @@
     <!-- About Section -->
     <section id="about">
         <!-- Grid container -->
-        <div class="md:container md:px-10 mx-auto grid grid-cols-1 lg:grid-cols-2">
+        <div class="md:container md:px-10 mx-auto grid grid-cols-1 lg:grid-cols-2 sm:pb-10 md:pb-10">
             <!--Title About-->
             <div class="py-20 col-span-1 lg:col-span-2 text-center">
                 <h1 class="text-4xl font-bold pb-5 text-veryDarkGray dark:text-white">ABOUT ME</h1>
@@ -98,15 +97,15 @@
                 <hr style="border:1px solid #bcbcbc; width: 100px; margin: 0 auto;"/>
             </div>
             <!-- Self Description -->
-            <div class="col-span-1 px-8 md:px-16 md pb-20 md:pt-10">
+            <div class="col-span-1 px-8  md pb-20 md:pt-10">
                 <h5 class="text-3xl font-bold text-darkGray dark:text-white3">Hello!</h5>
                 <p class="py-5 leading-loose font-medium text-gray dark:text-white5 ">I'm Jomari, A passionate web developer creating responsive websites and building applications
                     providing innovative designs. I'm a starter developer with savvy skills in front-end web development guarantee
                     satisfactory projects in the clients.
-                </p>
+                </p>  
                 <a href="https://drive.google.com/file/d/1Bf1qINPxA3dW0DOZe3N77PtoqWji__HY/view?usp=sharing " target="_blank" class="p-3 px-6 text-white 
                 bg-darkOrange rounded w-44 font-semibold hover:bg-darkerOrange
-                transition duration-150 ease-out hover:ease-in dark:bg-lightGray dark:text-white2" 
+                transition duration-150 ease-out hover:ease-in dark:bg-orange dark:hover:bg-darkerOrange dark:text-white2" 
                 download>DOWNLOAD MY CV</a>
             </div>
             <!-- Skills -->
@@ -148,9 +147,9 @@
     <!-- Services Section -->
     <section id="services">
         <!-- Grid Container -->
-        <div class=" bg-paleWhite dark:bg-darkGray mx-auto grid grid-cols-3 lg:grid-cols-3 justify-center gap-5 md:px-20 lg:px-28 pb-20">
+        <div class=" bg-paleWhite dark:bg-darkGray mx-auto grid grid-cols-1 lg:grid-cols-3 justify-center gap-5 md:px-20 lg:px-28 pb-20">
             <!-- Title Services -->
-            <div class="pt-20 pb-5 col-span-1 lg:col-span-4 text-center">
+            <div class="pt-20 pb-5 col-span-full text-center">
                 <h1 class="text-4xl font-bold pb-5 text-veryDarkGray dark:text-white">MY SERVICES</h1>
                 <hr style="border: 1px solid #bcbcbc; width: 50px; margin: 0 auto; margin-bottom: 5px; ">
                 <hr style="border: 1px solid #bcbcbc; width: 100px; margin: 0 auto; margin-bottom: 5px; ">
@@ -212,9 +211,9 @@
 
     <!-- Contacts Section -->
     <section id="contacts">
-        <div class=" bg-paleWhite flex sm:flex-col md:flex-col lg:flex-row pt-10 px-20 gap-10 pb-10 dark:bg-darkGray">
+        <div class=" bg-paleWhite flex sm:flex-col md:flex-col lg:flex-row pt-10 px-20 gap-10 pb-10 dark:bg-darkGray sm:px-8">
             <!-- Left Side -->
-            <div class="flex flex-col lg:w-[60%] drop-shadow-2xl md:mx-auto bg-white p-10 dark:bg-lightGray dark:shadow-inner dark:drop-shadow-2xl">
+            <div class="flex flex-col lg:w-[60%] drop-shadow-2xl md:mx-auto bg-white p-10 dark:bg-lightGray dark:shadow-inner dark:drop-shadow-2xl ">
                 <h2 class="text-3xl font-semibold text-veryDarkGray pb-3 dark:text-white">GET IN TOUCH</h2>
                 <hr style="border:1px solid #979494; width: 50px; margin-bottom: 5px; " />
                 <hr style="border:1px solid #979494; width: 100px; margin-bottom: 5px;"/>
