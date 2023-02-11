@@ -21,7 +21,8 @@ module.exports = {
         yellow: '#FFFF00',
         orange: '#FFA500',
         darkOrange: '#f3a222',
-        darkerOrange: '#d68300'
+        darkerOrange: '#d68300',
+        darkerOrange2: '#a56b52'
       },
       fontFamily:{
         montserrat: ['Montserrat', 'sans-serif']
@@ -40,6 +41,9 @@ module.exports = {
         'bounce2': 'bounce 1.1s infinite',
         'bounce3': 'bounce 1.2s infinite',
         'bounce4': 'bounce 1.3s infinite'
+      },
+      backgroundImage: {
+        
       }
     }
   },
