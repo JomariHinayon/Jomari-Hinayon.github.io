@@ -567,6 +567,12 @@ video {
   }
 }
 
+@media (min-width: 610px) {
+  .container {
+    max-width: 610px;
+  }
+}
+
 @media (min-width: 768px) {
   .container {
     max-width: 768px;
@@ -649,10 +655,6 @@ video {
   grid-column: 1 / -1;
 }
 
-.m-10 {
-  margin: 2.5rem;
-}
-
 .my-5 {
   margin-top: 1.25rem;
   margin-bottom: 1.25rem;
@@ -680,20 +682,16 @@ video {
   margin-top: 0.5rem;
 }
 
+.mt-5 {
+  margin-top: 1.25rem;
+}
+
 .ml-\[-60px\] {
   margin-left: -60px;
 }
 
 .mb-2 {
   margin-bottom: 0.5rem;
-}
-
-.ml-10 {
-  margin-left: 2.5rem;
-}
-
-.mt-5 {
-  margin-top: 1.25rem;
 }
 
 .block {
@@ -718,14 +716,6 @@ video {
 
 .h-auto {
   height: auto;
-}
-
-.h-\[7\.5rem\] {
-  height: 7.5rem;
-}
-
-.h-28 {
-  height: 7rem;
 }
 
 .h-10 {
@@ -1153,26 +1143,6 @@ video {
   padding-bottom: 0.75rem;
 }
 
-.pl-2 {
-  padding-left: 0.5rem;
-}
-
-.pr-5 {
-  padding-right: 1.25rem;
-}
-
-.pr-6 {
-  padding-right: 1.5rem;
-}
-
-.pl-10 {
-  padding-left: 2.5rem;
-}
-
-.pl-16 {
-  padding-left: 4rem;
-}
-
 .text-center {
   text-align: center;
 }
@@ -1210,13 +1180,13 @@ video {
   line-height: 1.75rem;
 }
 
-.text-\[\.9rem\] {
-  font-size: .9rem;
-}
-
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
+}
+
+.text-\[\.9rem\] {
+  font-size: .9rem;
 }
 
 .font-semibold {
@@ -1739,6 +1709,12 @@ nav a:hover::after,.active::after{
     }
   }
 
+  @media (min-width: 610px) {
+    .md\:container {
+      max-width: 610px;
+    }
+  }
+
   @media (min-width: 768px) {
     .md\:container {
       max-width: 768px;
@@ -1800,26 +1776,6 @@ nav a:hover::after,.active::after{
     margin-right: auto;
   }
 
-  .md\:ml-16 {
-    margin-left: 4rem;
-  }
-
-  .md\:ml-10 {
-    margin-left: 2.5rem;
-  }
-
-  .md\:ml-5 {
-    margin-left: 1.25rem;
-  }
-
-  .md\:ml-2 {
-    margin-left: 0.5rem;
-  }
-
-  .md\:ml-0 {
-    margin-left: 0px;
-  }
-
   .md\:w-\[680px\] {
     width: 680px;
   }
@@ -1842,12 +1798,6 @@ nav a:hover::after,.active::after{
 
   .md\:justify-around {
     justify-content: space-around;
-  }
-
-  .md\:space-x-16 > :not([hidden]) ~ :not([hidden]) {
-    --tw-space-x-reverse: 0;
-    margin-right: calc(4rem * var(--tw-space-x-reverse));
-    margin-left: calc(4rem * calc(1 - var(--tw-space-x-reverse)));
   }
 
   .md\:space-x-0 > :not([hidden]) ~ :not([hidden]) {
@@ -1882,6 +1832,10 @@ nav a:hover::after,.active::after{
     padding-top: 2.5rem;
   }
 
+  .md\:pl-16 {
+    padding-left: 4rem;
+  }
+
   .md\:pl-5 {
     padding-left: 1.25rem;
   }
@@ -1905,6 +1859,12 @@ nav a:hover::after,.active::after{
   @media (min-width: 500px) {
     .lg\:container {
       max-width: 500px;
+    }
+  }
+
+  @media (min-width: 610px) {
+    .lg\:container {
+      max-width: 610px;
     }
   }
 
@@ -1985,12 +1945,6 @@ nav a:hover::after,.active::after{
     margin-left: calc(4rem * calc(1 - var(--tw-space-x-reverse)));
   }
 
-  .lg\:space-x-10 > :not([hidden]) ~ :not([hidden]) {
-    --tw-space-x-reverse: 0;
-    margin-right: calc(2.5rem * var(--tw-space-x-reverse));
-    margin-left: calc(2.5rem * calc(1 - var(--tw-space-x-reverse)));
-  }
-
   .lg\:space-x-0 > :not([hidden]) ~ :not([hidden]) {
     --tw-space-x-reverse: 0;
     margin-right: calc(0px * var(--tw-space-x-reverse));
@@ -2031,5 +1985,11 @@ nav a:hover::after,.active::after{
 @media (min-width: 500px) {
   .smLogo\:w-16 {
     width: 4rem;
+  }
+}
+
+@media (min-width: 610px) {
+  .win610\:pl-16 {
+    padding-left: 4rem;
   }
 }

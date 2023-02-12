@@ -34,7 +34,8 @@ module.exports = {
         'contact': '819px',
         'navbar' : '1122px',
         'nav': '1250px',
-        'smLogo': '500px'
+        'smLogo': '500px',
+        'win610': '610px'
       },
       animation:{
         'bounce1': 'bounce 1s infinite',
