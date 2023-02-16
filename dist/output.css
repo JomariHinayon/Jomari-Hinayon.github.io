@@ -615,6 +615,10 @@ video {
   }
 }
 
+.invisible {
+  visibility: hidden;
+}
+
 .absolute {
   position: absolute;
 }
@@ -1400,6 +1404,10 @@ nav a:hover::after,.active::after{
   background: linear-gradient(0deg, rgba(42,40,40,0.8015581232492998) 0%, rgba(138,127,127,1) 7%, rgba(140,130,130,0.8883928571428571) 14%, rgba(148,142,142,0.38699229691876746) 25%, rgba(200,191,191,0.48503151260504207) 36%);
 }
 
+.whole-website {
+  /* display: none; */
+}
+
 .hover\:scale-125:hover {
   --tw-scale-x: 1.25;
   --tw-scale-y: 1.25;
@@ -1830,10 +1838,6 @@ nav a:hover::after,.active::after{
 
   .md\:pt-10 {
     padding-top: 2.5rem;
-  }
-
-  .md\:pl-16 {
-    padding-left: 4rem;
   }
 
   .md\:pl-5 {
