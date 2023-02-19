@@ -45,17 +45,19 @@ themeCheck();
 // <---------------------------------------------
 
 window.onload = function () {
-  const loading_animation = document.getElementsByClassName("banter-loader__box")
-console.log(loading_animation)
-
-  $(".whole-website").hide();
+  const loading_animation =
+    document.getElementsByClassName("banter-loader__box");
+  console.log(loading_animation);
 
   setTimeout(load_page, 1500);
 };
 
 function load_page() {
-  $(".banter-loader").fadeOut(500);
-  $(".whole-website").fadeIn(500);
+
+  const whole_website = document.getElementById("whole-website")
+  whole_website.classList.remove("hidden")
+  $(".banter-loader").fadeOut("fast");
+  $(".whole-website").fadeIn(2000);
 
   // Navbar Burger Menu Items
   const btn = document.getElementById("menu-btn");
@@ -66,7 +68,6 @@ function load_page() {
     nav.classList.toggle("flex");
     nav.classList.toggle("hidden");
   });
-
 
   // Scroll Reveal ---------------------------------->
   var slideDown = {
